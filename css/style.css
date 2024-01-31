@@ -31,6 +31,38 @@ body {
 .sidebar-container {
     flex: 1 1 0;
     background: url("../assets/img/sidebar-background.jpg") center center/cover no-repeat;
+
+    position: relative;
+}
+
+.logo-banner {
+    position: absolute;
+    top: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 170px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo-img {
+    height: clamp(75px, 8.5vw, 115px);
+    width: auto;
+    opacity: .85;
+}
+
+.logo-text {
+    font-size: clamp(25px, 3vw, 40px);
+    font-family: "Acquire";
+    color: #b74ef4;
+    padding-top: 18px;
+    margin-left: -7px;
+}
+
+.logo-text > span {
+    font-size: .4em;
+    margin-left: 3px;
 }
 
 .form-container {
