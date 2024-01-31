@@ -18,4 +18,15 @@ body {
     width: 100%;
     min-height: 100vh;
     background-color: black;
+
+    display: flex;
+}
+
+.sidebar-container {
+    flex: 1 1 0;
+    background: url("../assets/img/sidebar-background.jpg") center center/cover no-repeat;
+}
+
+.form-container {
+    flex: 2 3 0;
 }
