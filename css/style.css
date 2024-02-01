@@ -72,4 +72,12 @@ body {
 .form-container {
     flex: 2 3 0;
     overflow: auto;
+    padding: 130px 70px;
+}
+
+.signup-text p {
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 25px;
 }
