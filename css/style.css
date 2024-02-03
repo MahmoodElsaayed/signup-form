@@ -157,7 +157,7 @@ input + span {
 
 input#name:not(:placeholder-shown):invalid + span::after,
 input#surname:not(:placeholder-shown):invalid + span::after {
-    content: "* Input must be letters only";
+    content: "* must be letters only";
 }
 
 input#email:not(:placeholder-shown):invalid + span::after {
@@ -165,11 +165,11 @@ input#email:not(:placeholder-shown):invalid + span::after {
 }
 
 input#phone-number:not(:placeholder-shown):invalid + span::after {
-    content: "* Invalid number (must be between 10 to 15 digits)";
+    content: "* must be between 10 to 15 digits";
 }
 
 input#password:not(:placeholder-shown):invalid + span::after {
-    content: "* Invalid password (must be more than 8 characters)";
+    content: "* must be more than 8 characters";
 }
 
 input#confirm-password:not(:placeholder-shown):invalid + span::after {
