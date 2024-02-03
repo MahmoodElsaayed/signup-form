@@ -22,14 +22,14 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
-    max-height: 100vh;
     overflow: hidden;
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .sidebar-container {
-    flex: 4 1 0;
+    flex: 4 1 224px;
     background: url("../assets/img/sidebar-background.jpg") center center/cover no-repeat;
     position: relative;
 }
@@ -66,7 +66,8 @@ body {
 }
 
 .form-container {
-    flex: 7 3 0;
+    flex: 7 3 530px;
+    max-height: 100vh;
     overflow: auto;
     padding: 130px 70px;
 }
@@ -213,4 +214,42 @@ input#confirm-password:not(:placeholder-shown):invalid + span::after {
 .login a:hover {
     text-shadow: none;
     text-decoration: underline;
+}
+
+/* Tablet and mobile layout */
+@media screen and (max-width: 768px) {
+    body {
+        max-height: none;
+        overflow: visible;
+    }
+
+    .sidebar-container {
+        height: 200px;
+    }
+
+    .logo-img {
+        height: clamp(80px, 20vw, 130px);
+    }
+
+    .logo-text {
+        font-size: clamp(28px, 6vw, 45px);
+    }
+
+    .form-container {
+        padding: 80px 45px;
+        max-height: none;
+    }
+
+    .logo-banner {
+        top: 0;
+        height: 100%;
+    }
+
+    .form-submission {
+        text-align: center;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
 }
