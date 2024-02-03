@@ -114,8 +114,35 @@ body {
     font: bold 1.6rem "Poppins";
     color: rgba(255, 255, 255, 0.85);
     background-color: transparent;
+    transition: ease-in-out .3s;
 }
 
 .form-controls input::placeholder {
     color: rgba(255, 255, 255, 0.7);
+}
+
+.form-controls input:focus {
+    /* styles for focus state */
+    padding-left: 10px;
+    border: 1px solid #c54487;
+    outline: none;
+}
+
+input:focus:not(:placeholder-shown):invalid {
+    /* styles for focus + not empty + invalid state */
+    border-color: red;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+    /* styles for out-of-focus + not empty + valid state */
+    padding-left: 6px;
+    background-color: #c544874f;
+    border: 1px solid #c54487;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    /* styles for out-of-focus + not empty + invalid state */
+    padding-left: 6px;
+    background-color: rgba(255, 0, 0, .2);
+    border: 1px solid red;
 }
