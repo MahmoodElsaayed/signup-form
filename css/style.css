@@ -176,3 +176,45 @@ input#confirm-password:not(:placeholder-shown):invalid + span::after {
     content: "* Input doesn't match password";   
 }
 /* ************************************* */
+
+.form-submission {
+    margin-top: 80px;
+    color: white;
+}
+
+.submit-button {
+    width: 140px;
+    height: 40px;
+    font: bold 1.6rem "Poppins";
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #ba03ba;
+    box-shadow: 0 8px 15px rgb(185 2 185 / 50%);
+    transition: ease-in-out .3s;
+}
+
+.submit-button:hover {
+    scale: 1.05;
+}
+
+.submit-button:active {
+    scale: .95;
+}
+
+.login {
+    margin: 40px 0 0 4px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.login a {
+    color: #ff00f6;
+    text-decoration: none;
+    text-shadow: 0 0 7px hsl(300, 90%, 30%), 0 0 10px hsl(300, 90%, 30%), 0 0 15px hsl(300, 92%, 25%);
+}
+
+.login a:hover {
+    text-shadow: none;
+    text-decoration: underline;
+}
