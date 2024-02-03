@@ -28,29 +28,34 @@
                     <label for="name">Name<span aria-label=",required field">*</span></label>
                     <input type="text" id="name" name="name" pattern="[a-zA-Z]+" autocomplete="given-name"
                         placeholder="Name" title="Please enter your name (e.g. Jacob)" required>
+                    <span></span>
                 </div>
                 <div>
                     <label for="surname">Surname<span aria-label=",required field">*</span></label>
                     <input type="text" id="surname" name="surname" pattern="[a-zA-Z]+" autocomplete="family-name"
                         placeholder="Surname" title="Please enter your surname (e.g. Adam)" required>
+                    <span></span>
                 </div>
                 <div>
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                         autocomplete="email" placeholder="Email"
                         title="Please enter a valid email address (e.g. example@domain.com)">
+                    <span></span>
                 </div>
                 <div>
                     <label for="phone-number">Phone number<span aria-label=",required field">*</span></label>
                     <input type="tel" id="phone-number" name="phone_number" pattern="\d{10,15}" inputmode="tel"
                         autocomplete="on" placeholder="Phone number"
                         title="Please enter a phone number with 10 to 15 digits (area code included)" required>
+                    <span></span>
                 </div>
                 <div>
                     <label for="password">Password<span aria-label=",required field">*</span></label>
                     <input type="password" id="password" name="password" pattern="\S{8,}" autocomplete="new-password"
                         placeholder="Password"
                         title="Please enter a password that's 8 characters or more (spaces aren't allowed)" required>
+                    <span></span>
                 </div>
                 <div>
                     <label for="confirm-password">Confirm password<span aria-label=",required field">*</span></label>

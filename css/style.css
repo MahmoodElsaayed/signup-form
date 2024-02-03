@@ -146,3 +146,33 @@ input:not(:focus):not(:placeholder-shown):invalid {
     background-color: rgba(255, 0, 0, .2);
     border: 1px solid red;
 }
+
+/* Invalid inputs' error messages */
+input + span {
+    color: rgba(255, 0, 0, 0.75);
+    font: bold 1.2rem "Poppins";
+    display: inline-block;
+    margin-top: 7px;
+}
+
+input#name:not(:placeholder-shown):invalid + span::after,
+input#surname:not(:placeholder-shown):invalid + span::after {
+    content: "* Input must be letters only";
+}
+
+input#email:not(:placeholder-shown):invalid + span::after {
+    content: "* Invalid email (format: example@domain.com)";
+}
+
+input#phone-number:not(:placeholder-shown):invalid + span::after {
+    content: "* Invalid number (must be between 10 to 15 digits)";
+}
+
+input#password:not(:placeholder-shown):invalid + span::after {
+    content: "* Invalid password (must be more than 8 characters)";
+}
+
+input#confirm-password:not(:placeholder-shown):invalid + span::after {
+    content: "* Input doesn't match password";   
+}
+/* ************************************* */
