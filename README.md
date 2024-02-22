@@ -5,7 +5,7 @@
 
 ## Live Preview
 
-- You can try the calculator online by visiting the [live preview](https://mahmoodelsaayed.github.io/Odin-Form).
+- You can try the project online by visiting the [live preview](https://mahmoodelsaayed.github.io/Odin-Form).
 
 
 ## Development
