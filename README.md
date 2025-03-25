@@ -1,11 +1,11 @@
-# Odin-Form
+# signup-form
 
 - A responsive sign up form for an imaginary service. This project was completed as part of The [odin project's](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form/) curriculum.
 
 
 ## Live Preview
 
-- You can try the project online by visiting the [live preview](https://mahmoodelsaayed.github.io/Odin-Form).
+- You can try the project online by visiting the [live preview](https://mahmoodelsaayed.github.io/signup-form).
 
 
 ## Development
